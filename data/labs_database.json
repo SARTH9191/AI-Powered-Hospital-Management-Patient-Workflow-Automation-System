@@ -1,0 +1,55 @@
+{
+  "tests": [
+    {
+      "test_id": "LAB001",
+      "patient_id": "patient001",
+      "patient_name": "John Doe",
+      "test_type": "Complete Blood Count (CBC)",
+      "ordered_by": "Dr. Sarah Johnson",
+      "ordered_date": "2025-10-17",
+      "scheduled_date": "2025-10-20",
+      "status": "pending",
+      "priority": "routine",
+      "sample_type": "Blood",
+      "notes": "Fasting required - 8 hours",
+      "created_at": "2025-10-19T10:59:45.564813",
+      "updated_at": "2025-10-19T10:59:45.564813"
+    },
+    {
+      "test_id": "LAB002",
+      "patient_id": "patient001",
+      "patient_name": "John Doe",
+      "test_type": "Chest X-Ray",
+      "ordered_by": "Dr. Michael Chen",
+      "ordered_date": "2025-10-18",
+      "scheduled_date": "2025-10-21",
+      "status": "in_progress",
+      "priority": "routine",
+      "sample_type": "Imaging",
+      "notes": "Pre-employment physical",
+      "created_at": "2025-10-19T10:59:45.564813",
+      "updated_at": "2025-10-19T10:59:45.564813"
+    },
+    {
+      "test_id": "LAB003",
+      "patient_id": "patient001",
+      "patient_name": "John Doe",
+      "test_type": "Lipid Panel",
+      "ordered_by": "Dr. Sarah Johnson",
+      "ordered_date": "2025-10-09",
+      "completed_date": "2025-10-16",
+      "status": "completed",
+      "priority": "routine",
+      "sample_type": "Blood",
+      "results": {
+        "total_cholesterol": "185 mg/dL",
+        "hdl": "55 mg/dL",
+        "ldl": "110 mg/dL",
+        "triglycerides": "100 mg/dL"
+      },
+      "notes": "Results within normal range",
+      "created_at": "2025-10-19T10:59:45.564813",
+      "updated_at": "2025-10-19T10:59:45.564813"
+    }
+  ]
+}

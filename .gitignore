@@ -1,0 +1,103 @@
+# =============================================================================
+# Git Ignore Configuration - Hospital AI Agent System
+# =============================================================================
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Authentication Tokens & OAuth Pickles
+*.pickle
+token.pickle
+calendar_token.pickle
+docs_token.pickle
+drive_token.pickle
+sheets_token.pickle
+
+# Google Cloud & OAuth Secret Files
+credentials/*.json
+!credentials/client_secret.example.json
+credentials/*.pickle
+*.json.key
+
+# Python Artifacts & Caches
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Databases & Vector Stores
+*.sqlite
+*.sqlite3
+*.db
+chroma_medical_db/
+data/vector_db/
+
+# Frontend (Next.js / Node)
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+frontend/out/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing & Linting Caches
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.eslintcache
+
+# IDE, OS & Editor Temp Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs, Backups & Temporary Files
+*.log
+*.bak
+*.backup
+*.tmp
+logs/
+temp/
+tmp/
+test_*_id.txt

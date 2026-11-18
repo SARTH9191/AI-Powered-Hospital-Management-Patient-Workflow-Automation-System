@@ -1,0 +1,214 @@
+[
+  {
+    "doctor": "Cardiologist",
+    "symptom_or_disease": "Chest Pain",
+    "required_tests": ["ECG", "Troponin Test", "Echocardiogram"],
+    "notes": "Chest pain can indicate angina or heart attack; ECG and Troponin confirm cardiac cause.",
+    "tags": ["heart", "emergency", "pain"]
+  },
+  {
+    "doctor": "Cardiologist",
+    "symptom_or_disease": "High Blood Pressure (Hypertension)",
+    "required_tests": ["Blood Pressure log", "Lipid Profile", "Kidney Function Test", "ECG"],
+    "notes": "Helps determine if hypertension is primary or due to another cause.",
+    "tags": ["bp", "pressure", "hypertension"]
+  },
+  {
+    "doctor": "Cardiologist",
+    "symptom_or_disease": "Palpitations",
+    "required_tests": ["ECG", "Holter Monitor", "Thyroid Function Test"],
+    "notes": "Identifies arrhythmia or thyroid-induced rhythm changes.",
+    "tags": ["heartbeat", "arrhythmia", "palpitations"]
+  },
+  {
+    "doctor": "Cardiologist",
+    "symptom_or_disease": "Shortness of Breath on Exertion",
+    "required_tests": ["Echocardiogram", "BNP", "Chest X-ray"],
+    "notes": "Common in heart failure or valve problems.",
+    "tags": ["breath", "heartfailure"]
+  },
+  {
+    "doctor": "Cardiologist",
+    "symptom_or_disease": "Swelling in Legs or Ankles",
+    "required_tests": ["Echocardiogram", "LFT", "Kidney Function Test"],
+    "notes": "Rule out cardiac, hepatic, or renal causes.",
+    "tags": ["swelling", "edema"]
+  },
+  {
+    "doctor": "Cardiologist",
+    "symptom_or_disease": "High Cholesterol",
+    "required_tests": ["Lipid Profile", "Blood Sugar"],
+    "notes": "Determine risk of atherosclerosis and cardiac issues.",
+    "tags": ["cholesterol", "lipids"]
+  },
+  {
+    "doctor": "Cardiologist",
+    "symptom_or_disease": "Irregular Heartbeat",
+    "required_tests": ["ECG", "Holter Monitor"],
+    "notes": "Confirms arrhythmia and guides treatment.",
+    "tags": ["irregular", "rhythm"]
+  },
+  {
+    "doctor": "Cardiologist",
+    "symptom_or_disease": "Chest Tightness After Exercise",
+    "required_tests": ["Treadmill Test (TMT)", "ECG", "Echo"],
+    "notes": "Detects exercise-induced angina or ischemia.",
+    "tags": ["exercise", "angina"]
+  },
+  {
+    "doctor": "Cardiologist",
+    "symptom_or_disease": "Dizziness with Low Pulse Rate",
+    "required_tests": ["ECG", "Electrolyte Test"],
+    "notes": "May indicate bradycardia or conduction block.",
+    "tags": ["bradycardia", "pulse"]
+  },
+  {
+    "doctor": "Cardiologist",
+    "symptom_or_disease": "History of Heart Attack (Follow-up)",
+    "required_tests": ["ECG", "Echocardiogram", "Lipid Profile"],
+    "notes": "Assess post-MI recovery and lipid management.",
+    "tags": ["heartattack", "followup"]
+  },
+  {
+    "doctor": "Endocrinologist",
+    "symptom_or_disease": "Fatigue and Frequent Urination",
+    "required_tests": ["Fasting Glucose", "HbA1c", "Urine Glucose"],
+    "notes": "Check for diabetes mellitus.",
+    "tags": ["diabetes", "urination", "fatigue"]
+  },
+  {
+    "doctor": "Endocrinologist",
+    "symptom_or_disease": "Weight Gain, Hair Loss, Cold Sensitivity",
+    "required_tests": ["TSH", "T3", "T4"],
+    "notes": "Signs of hypothyroidism.",
+    "tags": ["thyroid", "hypothyroidism"]
+  },
+  {
+    "doctor": "Endocrinologist",
+    "symptom_or_disease": "Rapid Heartbeat, Weight Loss, Sweating",
+    "required_tests": ["TSH", "T3", "T4"],
+    "notes": "Signs of hyperthyroidism.",
+    "tags": ["thyroid", "hyperthyroidism"]
+  },
+  {
+    "doctor": "Endocrinologist",
+    "symptom_or_disease": "Obesity and Fatigue",
+    "required_tests": ["Lipid Profile", "Thyroid Function Test", "HbA1c"],
+    "notes": "Detect metabolic or thyroid disorder.",
+    "tags": ["obesity", "metabolic"]
+  },
+  {
+    "doctor": "Endocrinologist",
+    "symptom_or_disease": "Excessive Thirst and Weight Loss",
+    "required_tests": ["Fasting Glucose", "HbA1c"],
+    "notes": "Indicates diabetes mellitus.",
+    "tags": ["diabetes", "thirst"]
+  },
+  {
+    "doctor": "Endocrinologist",
+    "symptom_or_disease": "Irregular Periods and Acne (Female)",
+    "required_tests": ["LH", "FSH", "Testosterone", "Insulin"],
+    "notes": "Check for PCOS or hormonal imbalance.",
+    "tags": ["pocs", "hormone"]
+  },
+  {
+    "doctor": "Endocrinologist",
+    "symptom_or_disease": "Weak Bones or Fractures",
+    "required_tests": ["Vitamin D", "Calcium", "PTH"],
+    "notes": "Evaluate bone metabolism disorders.",
+    "tags": ["bones", "calcium", "osteoporosis"]
+  },
+  {
+    "doctor": "Endocrinologist",
+    "symptom_or_disease": "Lethargy and Muscle Weakness",
+    "required_tests": ["Electrolytes", "Cortisol"],
+    "notes": "May indicate adrenal gland dysfunction.",
+    "tags": ["adrenal", "weakness"]
+  },
+  {
+    "doctor": "Endocrinologist",
+    "symptom_or_disease": "Infertility (Male)",
+    "required_tests": ["Testosterone", "FSH", "LH", "Prolactin"],
+    "notes": "Hormonal evaluation for infertility.",
+    "tags": ["infertility", "male"]
+  },
+  {
+    "doctor": "Endocrinologist",
+    "symptom_or_disease": "Mood Swings and Fatigue",
+    "required_tests": ["Thyroid Function Test", "Cortisol"],
+    "notes": "Rule out thyroid or adrenal issues.",
+    "tags": ["mood", "cortisol"]
+  },
+  
+{
+  "doctor": "Gastroenterologist",
+    "symptom_or_disease": "Abdominal Pain",
+    "required_tests": ["LFT", "Amylase", "Lipase", "Abdominal Ultrasound"],
+    "notes": "Helps identify liver, pancreas, or gallbladder issues.",
+    "tags": ["abdomen", "pain"]
+  },
+  {
+    "doctor": "Gastroenterologist",
+    "symptom_or_disease": "Heartburn or Acid Reflux",
+    "required_tests": ["Upper GI Endoscopy", "H. pylori Test"],
+    "notes": "Rule out GERD or ulcer.",
+    "tags": ["acid", "reflux"]
+  },
+  {
+    "doctor": "Gastroenterologist",
+    "symptom_or_disease": "Jaundice",
+    "required_tests": ["LFT", "Bilirubin", "Ultrasound"],
+    "notes": "Detect liver or bile duct obstruction.",
+    "tags": ["liver", "yellow"]
+  },
+  {
+    "doctor": "Gastroenterologist",
+    "symptom_or_disease": "Nausea and Vomiting",
+    "required_tests": ["CBC", "LFT", "Amylase"],
+    "notes": "Could indicate gastritis, hepatitis, or pancreatitis.",
+    "tags": ["vomit", "stomach"]
+  },
+  {
+    "doctor": "Gastroenterologist",
+    "symptom_or_disease": "Bloating and Indigestion",
+    "required_tests": ["Stool Test", "H. pylori", "Ultrasound"],
+    "notes": "Rule out infection or IBS.",
+    "tags": ["bloating", "gas"]
+  },
+  {
+    "doctor": "Gastroenterologist",
+    "symptom_or_disease": "Loss of Appetite",
+    "required_tests": ["LFT", "Thyroid Function Test", "Ultrasound"],
+    "notes": "Could be due to liver disease or gastritis.",
+    "tags": ["appetite", "liver"]
+  },
+  {
+    "doctor": "Gastroenterologist",
+    "symptom_or_disease": "Blood in Stool",
+    "required_tests": ["Colonoscopy", "Stool Occult Blood Test"],
+    "notes": "Check for hemorrhoids, polyps, or cancer.",
+    "tags": ["blood", "colon"]
+  },
+  {
+    "doctor": "Gastroenterologist",
+    "symptom_or_disease": "Diarrhea for More Than 3 Days",
+    "required_tests": ["Stool Routine", "Electrolytes"],
+    "notes": "Identify infection or IBS.",
+    "tags": ["diarrhea", "infection"]
+  },
+  {
+    "doctor": "Gastroenterologist",
+    "symptom_or_disease": "Constipation",
+    "required_tests": ["Thyroid Function Test", "Stool Test"],
+    "notes": "Rule out hypothyroidism or bowel obstruction.",
+    "tags": ["constipation"]
+  },
+  {
+    "doctor": "Gastroenterologist",
+    "symptom_or_disease": "Unexplained Weight Loss with Stomach Pain",
+    "required_tests": ["Endoscopy", "CT Abdomen"],
+    "notes": "Rule out malignancy or ulcer.",
+    "tags": ["weightloss", "stomach"]
+  }
+]
+

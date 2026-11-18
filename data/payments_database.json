@@ -1,0 +1,54 @@
+[
+  {
+    "payment_id": "PAY2025198704",
+    "invoice_id": "INV2025476713",
+    "patient_id": "REG2025610127",
+    "patient_name": "Unknown",
+    "payment_amount": 30.0,
+    "payment_method": "Credit Card",
+    "payment_reference": "CC-20251016-001234",
+    "payment_date": "2025-10-16",
+    "payment_time": "02:09:28",
+    "notes": "Patient copay - insurance will cover remaining balance",
+    "created_at": "2025-10-16T02:09:28.750891"
+  },
+  {
+    "payment_id": "PAY2025596737",
+    "invoice_id": "INV2025811950",
+    "patient_id": "REG2025610127",
+    "patient_name": "Unknown",
+    "payment_amount": 50.0,
+    "payment_method": "Cash",
+    "payment_reference": "",
+    "payment_date": "2025-10-16",
+    "payment_time": "02:09:28",
+    "notes": "Partial payment - patient will pay remaining balance next visit",
+    "created_at": "2025-10-16T02:09:28.933425"
+  },
+  {
+    "payment_id": "PAY2025826253",
+    "invoice_id": "INV2025607434",
+    "patient_id": "REG2025610127",
+    "patient_name": "Unknown",
+    "payment_amount": 30.0,
+    "payment_method": "Credit Card",
+    "payment_reference": "CC-20251016-001234",
+    "payment_date": "2025-10-16",
+    "payment_time": "02:10:20",
+    "notes": "Patient copay - insurance will cover remaining balance",
+    "created_at": "2025-10-16T02:10:20.624121"
+  },
+  {
+    "payment_id": "PAY2025445775",
+    "invoice_id": "INV2025168489",
+    "patient_id": "REG2025610127",
+    "patient_name": "Unknown",
+    "payment_amount": 50.0,
+    "payment_method": "Cash",
+    "payment_reference": "",
+    "payment_date": "2025-10-16",
+    "payment_time": "02:10:20",
+    "notes": "Partial payment - patient will pay remaining balance next visit",
+    "created_at": "2025-10-16T02:10:20.767450"
+  }
+]

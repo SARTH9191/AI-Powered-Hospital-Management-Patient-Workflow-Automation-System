@@ -1,0 +1,70 @@
+[
+  {
+    "claim_id": "CLM2025588648",
+    "invoice_id": "INV2025476713",
+    "patient_id": "REG2025610127",
+    "patient_name": "Unknown",
+    "insurance_provider_id": "BLUE001",
+    "insurance_provider_name": "Blue Cross Blue Shield",
+    "policy_number": "BCBS123456789",
+    "service_amount": 448.2,
+    "copay": 30.0,
+    "insurance_coverage": 334.56,
+    "patient_responsibility": 113.64,
+    "diagnosis_codes": [
+      "J06.9",
+      "E11.9"
+    ],
+    "procedure_codes": [
+      "99213",
+      "85025",
+      "82947",
+      "80069"
+    ],
+    "claim_date": "2025-10-16",
+    "status": "Submitted",
+    "status_history": [
+      {
+        "status": "Submitted",
+        "date": "2025-10-16T02:09:28.672710",
+        "notes": "Claim submitted to insurance provider"
+      }
+    ],
+    "notes": "Routine check-up with lab work for diabetes monitoring and kidney function assessment",
+    "created_at": "2025-10-16T02:09:28.672710"
+  },
+  {
+    "claim_id": "CLM2025233811",
+    "invoice_id": "INV2025607434",
+    "patient_id": "REG2025610127",
+    "patient_name": "Unknown",
+    "insurance_provider_id": "BLUE001",
+    "insurance_provider_name": "Blue Cross Blue Shield",
+    "policy_number": "BCBS123456789",
+    "service_amount": 448.2,
+    "copay": 30.0,
+    "insurance_coverage": 334.56,
+    "patient_responsibility": 113.64,
+    "diagnosis_codes": [
+      "J06.9",
+      "E11.9"
+    ],
+    "procedure_codes": [
+      "99213",
+      "85025",
+      "82947",
+      "80069"
+    ],
+    "claim_date": "2025-10-16",
+    "status": "Submitted",
+    "status_history": [
+      {
+        "status": "Submitted",
+        "date": "2025-10-16T02:10:20.578649",
+        "notes": "Claim submitted to insurance provider"
+      }
+    ],
+    "notes": "Routine check-up with lab work for diabetes monitoring and kidney function assessment",
+    "created_at": "2025-10-16T02:10:20.578649"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "vitals": [
+    {
+      "vital_id": "VIT001",
+      "patient_id": "patient001",
+      "patient_name": "John Doe",
+      "recorded_date": "2025-10-14",
+      "recorded_by": "Nurse Mary Smith",
+      "measurements": [
+        {
+          "name": "Blood Pressure",
+          "value": "118/78",
+          "unit": "mmHg",
+          "status": "normal"
+        },
+        {
+          "name": "Heart Rate",
+          "value": "72",
+          "unit": "bpm",
+          "status": "normal"
+        },
+        {
+          "name": "Blood Sugar",
+          "value": "95",
+          "unit": "mg/dL",
+          "status": "normal"
+        },
+        {
+          "name": "Weight",
+          "value": "75",
+          "unit": "kg",
+          "status": "normal"
+        },
+        {
+          "name": "Temperature",
+          "value": "98.6",
+          "unit": "\u00b0F",
+          "status": "normal"
+        },
+        {
+          "name": "Oxygen Saturation",
+          "value": "98",
+          "unit": "%",
+          "status": "normal"
+        }
+      ],
+      "created_at": "2025-10-19T10:59:45.568130"
+    }
+  ]
+}

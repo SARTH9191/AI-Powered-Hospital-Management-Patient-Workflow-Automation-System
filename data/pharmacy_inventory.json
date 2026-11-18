@@ -1,0 +1,284 @@
+{
+  "Lisinopril_5mg": {
+    "drug_name": "Lisinopril",
+    "generic_name": "Lisinopril",
+    "dosage": "5mg",
+    "quantity_in_stock": 164,
+    "reorder_level": 50,
+    "unit_price": 49.92,
+    "location": "Shelf-3",
+    "expiry_date": "2027-08-25",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Lisinopril_10mg": {
+    "drug_name": "Lisinopril",
+    "generic_name": "Lisinopril",
+    "dosage": "10mg",
+    "quantity_in_stock": 1395,
+    "reorder_level": 50,
+    "unit_price": 20.28,
+    "location": "Shelf-4",
+    "expiry_date": "2026-08-31",
+    "last_updated": "2025-10-16 01:51:12",
+    "update_history": [
+      {
+        "timestamp": "2025-10-16 01:51:12",
+        "change": 500,
+        "reason": "Restock - monthly supply received",
+        "old_stock": 895,
+        "new_stock": 1395
+      }
+    ]
+  },
+  "Lisinopril_20mg": {
+    "drug_name": "Lisinopril",
+    "generic_name": "Lisinopril",
+    "dosage": "20mg",
+    "quantity_in_stock": 820,
+    "reorder_level": 50,
+    "unit_price": 24.78,
+    "location": "Shelf-12",
+    "expiry_date": "2027-09-25",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Lisinopril_40mg": {
+    "drug_name": "Lisinopril",
+    "generic_name": "Lisinopril",
+    "dosage": "40mg",
+    "quantity_in_stock": 563,
+    "reorder_level": 50,
+    "unit_price": 6.81,
+    "location": "Shelf-12",
+    "expiry_date": "2026-09-20",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Metformin_500mg": {
+    "drug_name": "Metformin",
+    "generic_name": "Metformin",
+    "dosage": "500mg",
+    "quantity_in_stock": 655,
+    "reorder_level": 50,
+    "unit_price": 26.72,
+    "location": "Shelf-13",
+    "expiry_date": "2026-09-02",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Metformin_850mg": {
+    "drug_name": "Metformin",
+    "generic_name": "Metformin",
+    "dosage": "850mg",
+    "quantity_in_stock": 218,
+    "reorder_level": 50,
+    "unit_price": 27.37,
+    "location": "Shelf-7",
+    "expiry_date": "2027-01-19",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Metformin_1000mg": {
+    "drug_name": "Metformin",
+    "generic_name": "Metformin",
+    "dosage": "1000mg",
+    "quantity_in_stock": 455,
+    "reorder_level": 50,
+    "unit_price": 22.09,
+    "location": "Shelf-14",
+    "expiry_date": "2026-12-04",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Aspirin_81mg": {
+    "drug_name": "Aspirin",
+    "generic_name": "Aspirin",
+    "dosage": "81mg",
+    "quantity_in_stock": 193,
+    "reorder_level": 50,
+    "unit_price": 23.66,
+    "location": "Shelf-16",
+    "expiry_date": "2026-09-07",
+    "last_updated": "2025-10-16 01:51:12",
+    "update_history": [
+      {
+        "timestamp": "2025-10-16 01:51:12",
+        "change": -50,
+        "reason": "Expired medication - disposed per regulations",
+        "old_stock": 243,
+        "new_stock": 193
+      }
+    ]
+  },
+  "Aspirin_325mg": {
+    "drug_name": "Aspirin",
+    "generic_name": "Aspirin",
+    "dosage": "325mg",
+    "quantity_in_stock": 886,
+    "reorder_level": 50,
+    "unit_price": 18.01,
+    "location": "Shelf-16",
+    "expiry_date": "2026-09-24",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Warfarin_1mg": {
+    "drug_name": "Warfarin",
+    "generic_name": "Warfarin",
+    "dosage": "1mg",
+    "quantity_in_stock": 501,
+    "reorder_level": 50,
+    "unit_price": 28.86,
+    "location": "Shelf-14",
+    "expiry_date": "2027-02-10",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Warfarin_2mg": {
+    "drug_name": "Warfarin",
+    "generic_name": "Warfarin",
+    "dosage": "2mg",
+    "quantity_in_stock": 186,
+    "reorder_level": 50,
+    "unit_price": 19.64,
+    "location": "Shelf-3",
+    "expiry_date": "2027-01-04",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Warfarin_5mg": {
+    "drug_name": "Warfarin",
+    "generic_name": "Warfarin",
+    "dosage": "5mg",
+    "quantity_in_stock": 307,
+    "reorder_level": 50,
+    "unit_price": 32.08,
+    "location": "Shelf-17",
+    "expiry_date": "2026-09-13",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Warfarin_10mg": {
+    "drug_name": "Warfarin",
+    "generic_name": "Warfarin",
+    "dosage": "10mg",
+    "quantity_in_stock": 762,
+    "reorder_level": 50,
+    "unit_price": 49.76,
+    "location": "Shelf-1",
+    "expiry_date": "2027-02-18",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Atorvastatin_10mg": {
+    "drug_name": "Atorvastatin",
+    "generic_name": "Atorvastatin",
+    "dosage": "10mg",
+    "quantity_in_stock": 823,
+    "reorder_level": 50,
+    "unit_price": 15.18,
+    "location": "Shelf-14",
+    "expiry_date": "2027-09-10",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Atorvastatin_20mg": {
+    "drug_name": "Atorvastatin",
+    "generic_name": "Atorvastatin",
+    "dosage": "20mg",
+    "quantity_in_stock": 362,
+    "reorder_level": 50,
+    "unit_price": 49.71,
+    "location": "Shelf-13",
+    "expiry_date": "2026-04-28",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Atorvastatin_40mg": {
+    "drug_name": "Atorvastatin",
+    "generic_name": "Atorvastatin",
+    "dosage": "40mg",
+    "quantity_in_stock": 752,
+    "reorder_level": 50,
+    "unit_price": 26.64,
+    "location": "Shelf-1",
+    "expiry_date": "2026-07-01",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Atorvastatin_80mg": {
+    "drug_name": "Atorvastatin",
+    "generic_name": "Atorvastatin",
+    "dosage": "80mg",
+    "quantity_in_stock": 694,
+    "reorder_level": 50,
+    "unit_price": 20.05,
+    "location": "Shelf-20",
+    "expiry_date": "2026-07-27",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Amoxicillin_250mg": {
+    "drug_name": "Amoxicillin",
+    "generic_name": "Amoxicillin",
+    "dosage": "250mg",
+    "quantity_in_stock": 863,
+    "reorder_level": 50,
+    "unit_price": 23.37,
+    "location": "Shelf-17",
+    "expiry_date": "2027-10-12",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Amoxicillin_500mg": {
+    "drug_name": "Amoxicillin",
+    "generic_name": "Amoxicillin",
+    "dosage": "500mg",
+    "quantity_in_stock": 474,
+    "reorder_level": 50,
+    "unit_price": 31.41,
+    "location": "Shelf-14",
+    "expiry_date": "2026-12-24",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Omeprazole_20mg": {
+    "drug_name": "Omeprazole",
+    "generic_name": "Omeprazole",
+    "dosage": "20mg",
+    "quantity_in_stock": 349,
+    "reorder_level": 50,
+    "unit_price": 30.19,
+    "location": "Shelf-11",
+    "expiry_date": "2027-09-18",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Omeprazole_40mg": {
+    "drug_name": "Omeprazole",
+    "generic_name": "Omeprazole",
+    "dosage": "40mg",
+    "quantity_in_stock": 199,
+    "reorder_level": 50,
+    "unit_price": 49.19,
+    "location": "Shelf-8",
+    "expiry_date": "2027-09-23",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Amlodipine_2.5mg": {
+    "drug_name": "Amlodipine",
+    "generic_name": "Amlodipine",
+    "dosage": "2.5mg",
+    "quantity_in_stock": 576,
+    "reorder_level": 50,
+    "unit_price": 38.42,
+    "location": "Shelf-12",
+    "expiry_date": "2026-09-03",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Amlodipine_5mg": {
+    "drug_name": "Amlodipine",
+    "generic_name": "Amlodipine",
+    "dosage": "5mg",
+    "quantity_in_stock": 659,
+    "reorder_level": 50,
+    "unit_price": 7.41,
+    "location": "Shelf-18",
+    "expiry_date": "2027-04-14",
+    "last_updated": "2025-10-16 01:51:12"
+  },
+  "Amlodipine_10mg": {
+    "drug_name": "Amlodipine",
+    "generic_name": "Amlodipine",
+    "dosage": "10mg",
+    "quantity_in_stock": 435,
+    "reorder_level": 50,
+    "unit_price": 8.83,
+    "location": "Shelf-17",
+    "expiry_date": "2026-12-29",
+    "last_updated": "2025-10-16 01:51:12"
+  }
+}

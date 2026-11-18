@@ -1,0 +1,522 @@
+{
+  "APR_20251019_235952_0": {
+    "request_id": "APR_20251019_235952_0",
+    "workflow_id": "WORK_20251019_001",
+    "patient_id": "REG2025001",
+    "patient_name": "Rajesh Kumar",
+    "approval_type": "test_order",
+    "approver_role": "doctor",
+    "approver_id": "DOC001",
+    "priority": "high",
+    "timeout_minutes": 30,
+    "patient_context": {
+      "age": 45,
+      "gender": "Male",
+      "has_insurance": true
+    },
+    "medical_history": "Hypertension (5 years), on Lisinopril 10mg daily. Father had MI at age 52.",
+    "current_symptoms": "Chest pain (3 days), radiating to left arm, worse with exertion. Pain level: 7/10. Shortness of breath on stairs.",
+    "actions": [
+      {
+        "action_id": "ACT_001",
+        "description": "ECG (Electrocardiogram)",
+        "ai_reasoning": "Patient has chest pain with cardiac risk factors. ECG is essential to rule out acute cardiac event.",
+        "cost": 1500.0,
+        "risk_level": "medium",
+        "confidence_score": 0.95,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_002",
+        "description": "Troponin Blood Test",
+        "ai_reasoning": "Troponin levels indicate heart muscle damage. Critical for chest pain diagnosis.",
+        "cost": 2000.0,
+        "risk_level": "low",
+        "confidence_score": 0.92,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_003",
+        "description": "Chest X-Ray",
+        "ai_reasoning": "Rule out pulmonary causes of chest pain (pneumonia, collapsed lung).",
+        "cost": 2500.0,
+        "risk_level": "low",
+        "confidence_score": 0.88,
+        "similar_cases": null,
+        "evidence": null
+      }
+    ],
+    "ai_recommendation": "Order all 3 tests urgently. Patient has cardiac risk factors (hypertension, age 45). Total cost: ₹6,000. Insurance should cover 80%.",
+    "ai_confidence": 0.92,
+    "status": "modified",
+    "created_at": "2025-10-19T23:59:52.887921",
+    "expires_at": "2025-10-20T00:29:52.887921",
+    "approved_at": "2025-10-19T23:59:52.910922",
+    "approved_by": "Dr. Priya Sharma",
+    "approver_comments": "Start with ECG + X-Ray + Stress Test. Will order Troponin if stress test is positive.",
+    "modifications": {
+      "tests_approved": [
+        "ECG",
+        "Chest X-Ray",
+        "Stress Test"
+      ],
+      "tests_rejected": [
+        "Troponin"
+      ],
+      "tests_added": [
+        "Stress Test"
+      ],
+      "new_total_cost": 7000.0,
+      "reasoning": "Stress test provides more comprehensive initial assessment than isolated Troponin"
+    },
+    "rejection_reason": null
+  },
+  "APR_20251019_235952_1": {
+    "request_id": "APR_20251019_235952_1",
+    "workflow_id": "WORK_20251019_001",
+    "patient_id": "REG2025001",
+    "patient_name": "Rajesh Kumar",
+    "approval_type": "treatment_plan",
+    "approver_role": "doctor",
+    "approver_id": null,
+    "priority": "critical",
+    "timeout_minutes": 15,
+    "patient_context": {
+      "age": 45,
+      "insurance": "Star Health",
+      "policy_limit": 500000
+    },
+    "medical_history": "Hypertension, family history of MI",
+    "current_symptoms": "Chest pain, abnormal cardiac tests",
+    "actions": [
+      {
+        "action_id": "ACT_004",
+        "description": "Admit to CCU (Cardiac Care Unit)",
+        "ai_reasoning": "Abnormal ECG + positive stress test = high cardiac risk. CCU monitoring essential.",
+        "cost": 25000.0,
+        "risk_level": "high",
+        "confidence_score": 0.95,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_005",
+        "description": "Cardiac Catheterization",
+        "ai_reasoning": "Gold standard to confirm CAD and assess blockage severity. May need stent placement.",
+        "cost": 80000.0,
+        "risk_level": "high",
+        "confidence_score": 0.87,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_006",
+        "description": "Start Dual Antiplatelet Therapy",
+        "ai_reasoning": "Aspirin + Clopidogrel to prevent clot formation before procedure.",
+        "cost": 500.0,
+        "risk_level": "medium",
+        "confidence_score": 0.92,
+        "similar_cases": null,
+        "evidence": null
+      }
+    ],
+    "ai_recommendation": "URGENT: Admit to CCU immediately. Schedule cardiac catheterization within 24 hours. Start antiplatelet therapy. Total estimated cost: ₹1,05,500. Insurance pre-authorization required.",
+    "ai_confidence": 0.87,
+    "status": "pending",
+    "created_at": "2025-10-19T23:59:52.917922",
+    "expires_at": "2025-10-20T00:14:52.917922",
+    "approved_at": null,
+    "approved_by": null,
+    "approver_comments": null,
+    "modifications": null,
+    "rejection_reason": null
+  },
+  "APR_20251019_235953_2": {
+    "request_id": "APR_20251019_235953_2",
+    "workflow_id": "WORK_20251019_001",
+    "patient_id": "REG2025001",
+    "patient_name": "Rajesh Kumar",
+    "approval_type": "billing_review",
+    "approver_role": "staff",
+    "approver_id": null,
+    "priority": "medium",
+    "timeout_minutes": 60,
+    "patient_context": {
+      "insurance_verified": true,
+      "services_count": 7
+    },
+    "medical_history": null,
+    "current_symptoms": null,
+    "actions": [
+      {
+        "action_id": "ACT_007",
+        "description": "Send invoice to patient",
+        "ai_reasoning": "All services verified, insurance calculated correctly. Ready to send.",
+        "cost": 23100.0,
+        "risk_level": "low",
+        "confidence_score": 0.98,
+        "similar_cases": null,
+        "evidence": null
+      }
+    ],
+    "ai_recommendation": "Bill verified. Insurance pre-authorization confirmed. Patient copay: ₹23,100. Send invoice via email and SMS.",
+    "ai_confidence": 0.98,
+    "status": "pending",
+    "created_at": "2025-10-19T23:59:53.147872",
+    "expires_at": "2025-10-20T00:59:53.147872",
+    "approved_at": null,
+    "approved_by": null,
+    "approver_comments": null,
+    "modifications": null,
+    "rejection_reason": null
+  },
+  "APR_20251020_001417_3": {
+    "request_id": "APR_20251020_001417_3",
+    "workflow_id": "WORK_PRIYA_001",
+    "patient_id": "REG2025_PS_001",
+    "patient_name": "Priya Sharma",
+    "approval_type": "test_order",
+    "approver_role": "doctor",
+    "approver_id": null,
+    "priority": "high",
+    "timeout_minutes": 30,
+    "patient_context": {
+      "weeks_pregnant": 24,
+      "has_insurance": true,
+      "risk_factors": [
+        "family_history",
+        "elevated_glucose"
+      ]
+    },
+    "medical_history": "First pregnancy, family history of Type 2 diabetes (mother), no previous complications",
+    "current_symptoms": "Increased thirst, frequent urination, fatigue",
+    "actions": [
+      {
+        "action_id": "TEST_001",
+        "description": "Oral Glucose Tolerance Test (OGTT)",
+        "ai_reasoning": "Gold standard for gestational diabetes diagnosis. Patient has risk factors: family history + elevated fasting glucose.",
+        "cost": 1800.0,
+        "risk_level": "low",
+        "confidence_score": 0.96,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "TEST_002",
+        "description": "HbA1c Test",
+        "ai_reasoning": "Shows average blood sugar over 3 months. Helps assess long-term glycemic control.",
+        "cost": 1200.0,
+        "risk_level": "low",
+        "confidence_score": 0.91,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "TEST_003",
+        "description": "Fasting Blood Sugar",
+        "ai_reasoning": "Baseline measurement for diabetes monitoring.",
+        "cost": 500.0,
+        "risk_level": "low",
+        "confidence_score": 0.98,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "TEST_004",
+        "description": "Ultrasound Scan (Fetal Development)",
+        "ai_reasoning": "Monitor fetal growth, detect any complications from gestational diabetes.",
+        "cost": 3500.0,
+        "risk_level": "low",
+        "confidence_score": 0.94,
+        "similar_cases": null,
+        "evidence": null
+      }
+    ],
+    "ai_recommendation": "Recommend all 4 tests. Patient is at high risk for gestational diabetes. Early detection and management critical for maternal and fetal health.",
+    "ai_confidence": 0.94,
+    "status": "modified",
+    "created_at": "2025-10-20T00:14:17.343699",
+    "expires_at": "2025-10-20T00:44:17.343699",
+    "approved_at": "2025-10-20T00:14:17.364002",
+    "approved_by": "Dr. Anjali Mehta",
+    "approver_comments": "All tests approved. Added nutrition consultation as patient will need dietary guidance for gestational diabetes management.",
+    "modifications": {
+      "tests_approved": [
+        "OGTT",
+        "HbA1c",
+        "Fasting Blood Sugar",
+        "Ultrasound"
+      ],
+      "services_added": [
+        {
+          "name": "Nutrition Consultation",
+          "cost": 1500.0,
+          "reasoning": "Dietary management crucial for gestational diabetes"
+        }
+      ],
+      "new_total_cost": 8500.0
+    },
+    "rejection_reason": null
+  },
+  "APR_20251020_005636_4": {
+    "request_id": "APR_20251020_005636_4",
+    "workflow_id": "WF_CARDIAC_001",
+    "patient_id": "REG2025_AV_001",
+    "patient_name": "Amit Verma",
+    "approval_type": "test_order",
+    "approver_role": "doctor",
+    "approver_id": null,
+    "priority": "high",
+    "timeout_minutes": 120,
+    "patient_context": {
+      "age": 45,
+      "gender": "Male",
+      "has_insurance": true,
+      "family_history": "Father had MI at age 52",
+      "lifestyle": "Sedentary, occasional smoker"
+    },
+    "medical_history": "Hypertension (diagnosed 2 years ago, controlled with medication). Father had MI at age 52.",
+    "current_symptoms": "Chest discomfort for 1 week, worse with exertion. Shortness of breath. Pain level 6/10.",
+    "actions": [
+      {
+        "action_id": "ACT_001",
+        "description": "ECG (Electrocardiogram)",
+        "ai_reasoning": "Baseline cardiac rhythm assessment. Essential for detecting arrhythmias and ischemic changes.",
+        "cost": 1500.0,
+        "risk_level": "low",
+        "confidence_score": 0.98,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_002",
+        "description": "Echocardiogram",
+        "ai_reasoning": "Evaluate cardiac structure and function. Assess ejection fraction, valve function, and wall motion abnormalities.",
+        "cost": 4500.0,
+        "risk_level": "low",
+        "confidence_score": 0.95,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_003",
+        "description": "Cardiac Troponin-I Test",
+        "ai_reasoning": "Rule out acute cardiac injury. Troponin is the gold standard for detecting myocardial damage.",
+        "cost": 2000.0,
+        "risk_level": "low",
+        "confidence_score": 0.92,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_004",
+        "description": "Stress Test (TMT)",
+        "ai_reasoning": "Assess exercise-induced cardiac changes. Detects coronary artery disease that may not be visible at rest.",
+        "cost": 3000.0,
+        "risk_level": "medium",
+        "confidence_score": 0.88,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_005",
+        "description": "Lipid Profile",
+        "ai_reasoning": "Assess cardiovascular risk factors. High cholesterol is a major predictor of cardiac events.",
+        "cost": 800.0,
+        "risk_level": "low",
+        "confidence_score": 0.96,
+        "similar_cases": null,
+        "evidence": null
+      }
+    ],
+    "ai_recommendation": "Comprehensive cardiac evaluation recommended. Patient presents with classic angina symptoms. Tests will help diagnose coronary artery disease, heart failure, or other cardiac conditions. Immediate attention recommended.",
+    "ai_confidence": 0.95,
+    "status": "pending",
+    "created_at": "2025-10-20T00:56:36.226504",
+    "expires_at": "2025-10-20T02:56:36.226504",
+    "approved_at": null,
+    "approved_by": null,
+    "approver_comments": null,
+    "modifications": null,
+    "rejection_reason": null
+  },
+  "APR_20251020_010556_5": {
+    "request_id": "APR_20251020_010556_5",
+    "workflow_id": "WF_CARDIAC_001",
+    "patient_id": "REG2025_AV_001",
+    "patient_name": "Amit Verma",
+    "approval_type": "test_order",
+    "approver_role": "doctor",
+    "approver_id": null,
+    "priority": "high",
+    "timeout_minutes": 120,
+    "patient_context": {
+      "age": 45,
+      "gender": "Male",
+      "has_insurance": true,
+      "family_history": "Father had MI at age 52",
+      "lifestyle": "Sedentary, occasional smoker"
+    },
+    "medical_history": "Hypertension (diagnosed 2 years ago, controlled with medication). Father had MI at age 52.",
+    "current_symptoms": "Chest discomfort for 1 week, worse with exertion. Shortness of breath. Pain level 6/10.",
+    "actions": [
+      {
+        "action_id": "ACT_001",
+        "description": "ECG (Electrocardiogram)",
+        "ai_reasoning": "Baseline cardiac rhythm assessment. Essential for detecting arrhythmias and ischemic changes.",
+        "cost": 1500.0,
+        "risk_level": "low",
+        "confidence_score": 0.98,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_002",
+        "description": "Echocardiogram",
+        "ai_reasoning": "Evaluate cardiac structure and function. Assess ejection fraction, valve function, and wall motion abnormalities.",
+        "cost": 4500.0,
+        "risk_level": "low",
+        "confidence_score": 0.95,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_003",
+        "description": "Cardiac Troponin-I Test",
+        "ai_reasoning": "Rule out acute cardiac injury. Troponin is the gold standard for detecting myocardial damage.",
+        "cost": 2000.0,
+        "risk_level": "low",
+        "confidence_score": 0.92,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_004",
+        "description": "Stress Test (TMT)",
+        "ai_reasoning": "Assess exercise-induced cardiac changes. Detects coronary artery disease that may not be visible at rest.",
+        "cost": 3000.0,
+        "risk_level": "medium",
+        "confidence_score": 0.88,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_005",
+        "description": "Lipid Profile",
+        "ai_reasoning": "Assess cardiovascular risk factors. High cholesterol is a major predictor of cardiac events.",
+        "cost": 800.0,
+        "risk_level": "low",
+        "confidence_score": 0.96,
+        "similar_cases": null,
+        "evidence": null
+      }
+    ],
+    "ai_recommendation": "Comprehensive cardiac evaluation recommended. Patient presents with classic angina symptoms. Tests will help diagnose coronary artery disease, heart failure, or other cardiac conditions. Immediate attention recommended.",
+    "ai_confidence": 0.95,
+    "status": "pending",
+    "created_at": "2025-10-20T01:05:56.651100",
+    "expires_at": "2025-10-20T03:05:56.651100",
+    "approved_at": null,
+    "approved_by": null,
+    "approver_comments": null,
+    "modifications": null,
+    "rejection_reason": null
+  },
+  "APR_20251020_010743_6": {
+    "request_id": "APR_20251020_010743_6",
+    "workflow_id": "WF_CARDIAC_001",
+    "patient_id": "REG2025_AV_001",
+    "patient_name": "Amit Verma",
+    "approval_type": "test_order",
+    "approver_role": "doctor",
+    "approver_id": null,
+    "priority": "high",
+    "timeout_minutes": 120,
+    "patient_context": {
+      "age": 45,
+      "gender": "Male",
+      "has_insurance": true,
+      "family_history": "Father had MI at age 52",
+      "lifestyle": "Sedentary, occasional smoker"
+    },
+    "medical_history": "Hypertension (diagnosed 2 years ago, controlled with medication). Father had MI at age 52.",
+    "current_symptoms": "Chest discomfort for 1 week, worse with exertion. Shortness of breath. Pain level 6/10.",
+    "actions": [
+      {
+        "action_id": "ACT_001",
+        "description": "ECG (Electrocardiogram)",
+        "ai_reasoning": "Baseline cardiac rhythm assessment. Essential for detecting arrhythmias and ischemic changes.",
+        "cost": 1500.0,
+        "risk_level": "low",
+        "confidence_score": 0.98,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_002",
+        "description": "Echocardiogram",
+        "ai_reasoning": "Evaluate cardiac structure and function. Assess ejection fraction, valve function, and wall motion abnormalities.",
+        "cost": 4500.0,
+        "risk_level": "low",
+        "confidence_score": 0.95,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_003",
+        "description": "Cardiac Troponin-I Test",
+        "ai_reasoning": "Rule out acute cardiac injury. Troponin is the gold standard for detecting myocardial damage.",
+        "cost": 2000.0,
+        "risk_level": "low",
+        "confidence_score": 0.92,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_004",
+        "description": "Stress Test (TMT)",
+        "ai_reasoning": "Assess exercise-induced cardiac changes. Detects coronary artery disease that may not be visible at rest.",
+        "cost": 3000.0,
+        "risk_level": "medium",
+        "confidence_score": 0.88,
+        "similar_cases": null,
+        "evidence": null
+      },
+      {
+        "action_id": "ACT_005",
+        "description": "Lipid Profile",
+        "ai_reasoning": "Assess cardiovascular risk factors. High cholesterol is a major predictor of cardiac events.",
+        "cost": 800.0,
+        "risk_level": "low",
+        "confidence_score": 0.96,
+        "similar_cases": null,
+        "evidence": null
+      }
+    ],
+    "ai_recommendation": "Comprehensive cardiac evaluation recommended. Patient presents with classic angina symptoms. Tests will help diagnose coronary artery disease, heart failure, or other cardiac conditions. Immediate attention recommended.",
+    "ai_confidence": 0.95,
+    "status": "modified",
+    "created_at": "2025-10-20T01:07:43.482670",
+    "expires_at": "2025-10-20T03:07:43.482670",
+    "approved_at": "2025-10-20T01:07:45.694979",
+    "approved_by": "Dr. Neha Patel",
+    "approver_comments": "Approved with modifications. Removed Troponin-I as symptoms are not acute. Added Chest X-Ray to rule out pulmonary causes of chest discomfort. Patient should fast 12 hours before Lipid Profile.",
+    "modifications": {
+      "removed_tests": [
+        "Cardiac Troponin-I Test"
+      ],
+      "added_tests": [
+        {
+          "action": "Order Chest X-Ray (PA view)",
+          "cost": 1200.0,
+          "reason": "Rule out pulmonary causes of chest discomfort"
+        }
+      ],
+      "special_instructions": "Patient should fast 12 hours before Lipid Profile test",
+      "new_total_cost": 10000.0
+    },
+    "rejection_reason": null
+  }
+}

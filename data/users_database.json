@@ -1,0 +1,42 @@
+[
+  {
+    "user_id": "ADMIN001",
+    "email": "pawarsamarth786@gmail.com",
+    "username": "admin",
+    "full_name": "Hospital Administrator",
+    "role": "admin",
+    "hashed_password": "$2b$12$4Wayk.ibHXTHhKzLKQHlO.scbgtaqL389te0h7PViN8IDJHaVVlPm",
+    "is_active": true,
+    "created_at": "2025-10-16T23:08:19.858727"
+  },
+  {
+    "user_id": "DOC001",
+    "email": "doctor@hospital.com",
+    "username": "doctor",
+    "full_name": "Dr. Sarah Johnson",
+    "role": "doctor",
+    "hashed_password": "$2b$12$9ftns51WfaJjBnIYV9oD5.8jzXs9874fbvxV7rK7S4DJ4CYLGrPj2",
+    "is_active": true,
+    "created_at": "2025-10-16T23:08:20.108564"
+  },
+  {
+    "user_id": "STAFF001",
+    "email": "staff@hospital.com",
+    "username": "staff",
+    "full_name": "Hospital Staff",
+    "role": "staff",
+    "hashed_password": "$2b$12$A8Q5aFU1zXh0t5Zk07BDPueGeMe9YJuc.WL/t6GjtrRovUpqwIoI2",
+    "is_active": true,
+    "created_at": "2025-10-16T23:08:20.359585"
+  },
+  {
+    "user_id": "patient001",
+    "email": "patient@hospital.com",
+    "username": "patient",
+    "full_name": "John Doe",
+    "role": "patient",
+    "hashed_password": "$2b$12$hiKNMozxV3N/X525Pl1/9.OrgqlfRgrLKZvkK9DDUlq0uiyEc4Cxa",
+    "is_active": true,
+    "created_at": "2025-10-19T04:59:45.340900"
+  }
+]

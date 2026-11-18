@@ -1,0 +1,88 @@
+# FastAPI Backend Requirements - Phase 3
+# Hospital Management AI Agent System
+
+# Core Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Data Validation
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.0
+bcrypt==4.1.1
+
+# Google OAuth2
+google-auth==2.25.2
+google-auth-oauthlib==1.2.0
+google-auth-httplib2==0.2.0
+
+# Google Workspace APIs (already in use)
+google-api-python-client==2.108.0
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.0
+
+# PDF Generation
+reportlab==4.0.7
+
+# LangChain & AI (already in use)
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-google-genai>=0.0.6
+langchain-community>=0.0.20
+langgraph>=0.0.20
+
+# WebSocket Support
+websockets==12.0
+
+# HTTP Client
+httpx==0.25.2
+requests==2.31.0
+
+# Background Tasks & Scheduling
+apscheduler==3.10.4
+schedule==1.2.0
+
+# Database - PostgreSQL (Phase 3B: Dual-Database Migration)
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+alembic==1.13.0
+asyncpg==0.29.0  # Async PostgreSQL driver
+
+# Redis Cache
+redis==5.0.1
+redis-py==5.0.1
+hiredis==2.3.2  # C parser for faster Redis performance
+
+# Vector Database & RAG
+chromadb==0.4.22
+sentence-transformers==2.3.1
+torch==2.1.2  # Required for sentence-transformers
+numpy==1.24.3
+
+# CORS & Middleware
+python-cors==1.0.0
+
+# Logging & Monitoring
+python-json-logger==2.0.7
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# Email & SMS (already in use)
+# twilio==8.11.0
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Development
+black==23.12.0
+flake8==6.1.0
+mypy==1.7.1

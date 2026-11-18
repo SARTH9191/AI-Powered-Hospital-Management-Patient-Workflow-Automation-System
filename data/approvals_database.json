@@ -1,0 +1,992 @@
+[
+  {
+    "approval_id": "APR20251016023917727",
+    "action_type": "schedule_appointment",
+    "tier": "tier2_request_approval",
+    "priority": "medium",
+    "requester": "Patient Portal",
+    "details": {
+      "patient_id": "REG2025001",
+      "doctor_id": "DOC001",
+      "date": "2025-10-25",
+      "time": "10:00 AM",
+      "specialty": "Cardiology"
+    },
+    "reason": "Patient requested appointment through online portal",
+    "estimated_cost": null,
+    "affected_entities": [
+      "REG2025001"
+    ],
+    "status": "approved",
+    "requires_admin": false,
+    "created_at": "2025-10-16T02:39:17.149593",
+    "timeout_at": "2025-10-17T02:39:17.149593",
+    "approved_by": "ADMIN001",
+    "approved_at": "2025-10-16T02:39:17.316224",
+    "rejection_reason": null,
+    "execution_status": "executed",
+    "execution_result": {
+      "status": "success",
+      "message": "Successfully executed schedule_appointment",
+      "executed_at": "2025-10-16T02:39:17.392524",
+      "details": {
+        "patient_id": "REG2025001",
+        "doctor_id": "DOC001",
+        "date": "2025-10-25",
+        "time": "10:00 AM",
+        "specialty": "Cardiology"
+      }
+    },
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-16T02:39:17.149593",
+        "note": "Approval request created"
+      },
+      {
+        "status": "approved",
+        "timestamp": "2025-10-16T02:39:17.316224",
+        "admin": "ADMIN001",
+        "note": "Approved - patient has insurance coverage and doctor has availability"
+      },
+      {
+        "status": "executed",
+        "timestamp": "2025-10-16T02:39:17.392524",
+        "executor": "SYSTEM_EXECUTOR",
+        "note": "Action executed successfully"
+      }
+    ],
+    "executed_by": "SYSTEM_EXECUTOR",
+    "executed_at": "2025-10-16T02:39:17.392524"
+  },
+  {
+    "approval_id": "APR20251016023917847",
+    "action_type": "modify_prescription",
+    "tier": "tier3_admin_authorization",
+    "priority": "high",
+    "requester": "Dr. Sarah Johnson",
+    "details": {
+      "patient_id": "REG2025001",
+      "prescription_id": "RX2025001",
+      "current_medication": "Warfarin 5mg",
+      "new_medication": "Warfarin 10mg",
+      "reason": "Dosage adjustment based on lab results",
+      "quantity": 300,
+      "total_cost": 1500.0
+    },
+    "reason": "Dosage increase needed based on recent INR test results",
+    "estimated_cost": null,
+    "affected_entities": [
+      "REG2025001"
+    ],
+    "status": "approved",
+    "requires_admin": true,
+    "created_at": "2025-10-16T02:39:17.241328",
+    "timeout_at": "2025-10-19T02:39:17.241328",
+    "approved_by": "ADMIN002",
+    "approved_at": "2025-10-16T02:39:17.361442",
+    "rejection_reason": null,
+    "execution_status": "queued",
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-16T02:39:17.241328",
+        "note": "Approval request created"
+      },
+      {
+        "status": "modified",
+        "timestamp": "2025-10-16T02:39:17.361442",
+        "admin": "ADMIN002",
+        "note": "Reduced quantity to match budget constraints",
+        "modifications": {
+          "quantity": 300,
+          "total_cost": 1500.0
+        }
+      }
+    ],
+    "modified_details": {
+      "quantity": 300,
+      "total_cost": 1500.0
+    }
+  },
+  {
+    "approval_id": "APR20251016023917843",
+    "action_type": "generate_purchase_order",
+    "tier": "tier2_request_approval",
+    "priority": "medium",
+    "requester": "Proactive Agent - Inventory Monitor",
+    "details": {
+      "item": "Lisinopril 10mg",
+      "quantity": 500,
+      "unit_price": 5.0,
+      "supplier": "MedPharm Inc.",
+      "current_stock": 45,
+      "reorder_level": 50
+    },
+    "reason": "Low stock detected - will run out in 5.6 days based on usage patterns",
+    "estimated_cost": 2500.0,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-16T02:39:17.261295",
+    "timeout_at": "2025-10-17T02:39:17.261295",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-16T02:39:17.261295",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251016023917560",
+    "action_type": "delete_patient_record",
+    "tier": "tier3_admin_authorization",
+    "priority": "critical",
+    "requester": "Admin Request",
+    "details": {
+      "patient_id": "REG2025999",
+      "reason": "Patient requested account deletion under GDPR",
+      "backup_created": true,
+      "retention_period": "7 years"
+    },
+    "reason": "GDPR right to be forgotten - patient submitted formal deletion request",
+    "estimated_cost": null,
+    "affected_entities": [
+      "REG2025999"
+    ],
+    "status": "approved",
+    "requires_admin": true,
+    "created_at": "2025-10-16T02:39:17.278081",
+    "timeout_at": "2025-10-19T02:39:17.278081",
+    "approved_by": "ADMIN_SUPER",
+    "approved_at": "2025-10-16T02:39:17.416710",
+    "rejection_reason": null,
+    "execution_status": "queued",
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-16T02:39:17.278081",
+        "note": "Approval request created"
+      },
+      {
+        "status": "approved",
+        "timestamp": "2025-10-16T02:39:17.416710",
+        "admin": "ADMIN_SUPER",
+        "note": "Verified GDPR request documentation. Patient identity confirmed. Backup created. Approved for deletion."
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251016023917307",
+    "action_type": "send_bulk_email",
+    "tier": "tier2_request_approval",
+    "priority": "low",
+    "requester": "Marketing Team",
+    "details": {
+      "campaign_name": "Annual Flu Shot Reminder",
+      "recipient_count": 1500,
+      "email_type": "health_reminder",
+      "send_date": "2025-10-20"
+    },
+    "reason": "Annual flu vaccination campaign - send reminders to all eligible patients",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "rejected",
+    "requires_admin": false,
+    "created_at": "2025-10-16T02:39:17.295230",
+    "timeout_at": "2025-10-17T02:39:17.295230",
+    "approved_by": "ADMIN001",
+    "approved_at": "2025-10-16T02:39:17.337371",
+    "rejection_reason": "Rejected - too many recipients, need to segment by age groups first",
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-16T02:39:17.295230",
+        "note": "Approval request created"
+      },
+      {
+        "status": "rejected",
+        "timestamp": "2025-10-16T02:39:17.337371",
+        "admin": "ADMIN001",
+        "note": "Rejected - too many recipients, need to segment by age groups first"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251017185202524",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "",
+      "patient_name": "Quick Test Patient",
+      "tests": [
+        "Complete Blood Count",
+        "Comprehensive Metabolic Panel",
+        "Lipid Profile",
+        "HbA1c",
+        "Thyroid Stimulating Hormone"
+      ],
+      "reason": "LLM recommendation based on: low risk, conditions: None",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: low risk, conditions: None",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-17T18:52:02.607881",
+    "timeout_at": "2025-10-18T18:52:02.607881",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-17T18:52:02.607881",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251017191659686",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "REG2025062541",
+      "patient_name": "Quick Test Patient",
+      "tests": [
+        "Complete Blood Count",
+        "Comprehensive Metabolic Panel",
+        "Lipid Profile",
+        "HbA1c",
+        "Thyroid Stimulating Hormone",
+        "Urinalysis",
+        "Vitamin D"
+      ],
+      "reason": "LLM recommendation based on: None risk, conditions: None",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: None risk, conditions: None",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-17T19:16:59.743120",
+    "timeout_at": "2025-10-18T19:16:59.743120",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-17T19:16:59.743120",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251017210909293",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "REG2025062541",
+      "patient_name": "Quick Test Patient",
+      "tests": [
+        "Complete Blood Count",
+        "Comprehensive Metabolic Panel",
+        "Lipid Panel",
+        "HbA1c",
+        "Thyroid Stimulating Hormone",
+        "Urinalysis"
+      ],
+      "reason": "LLM recommendation based on: low risk, conditions: ",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: low risk, conditions: ",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-17T21:09:09.999529",
+    "timeout_at": "2025-10-18T21:09:09.999529",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-17T21:09:09.999529",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251017220117762",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "REG2025062541",
+      "patient_name": "Quick Test Patient",
+      "tests": [
+        "Complete Blood Count",
+        "Comprehensive Metabolic Panel",
+        "Lipid Profile",
+        "HbA1c"
+      ],
+      "reason": "LLM recommendation based on: low risk, conditions: ",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: low risk, conditions: ",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-17T22:01:17.478356",
+    "timeout_at": "2025-10-18T22:01:17.478356",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-17T22:01:17.478356",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251017221201766",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "REG2025062541",
+      "patient_name": "Quick Test Patient",
+      "tests": [
+        "Complete Blood Count",
+        "Comprehensive Metabolic Panel",
+        "Lipid Profile",
+        "HbA1c",
+        "Thyroid Stimulating Hormone"
+      ],
+      "reason": "LLM recommendation based on: low risk, conditions: ",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: low risk, conditions: ",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-17T22:12:01.730515",
+    "timeout_at": "2025-10-18T22:12:01.730515",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-17T22:12:01.730515",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251017222016323",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "REG2025062541",
+      "patient_name": "Quick Test Patient",
+      "tests": [
+        "Complete Blood Count",
+        "Comprehensive Metabolic Panel",
+        "Lipid Panel",
+        "HbA1c",
+        "Thyroid Stimulating Hormone",
+        "Urinalysis"
+      ],
+      "reason": "LLM recommendation based on: low risk, conditions: ",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: low risk, conditions: ",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-17T22:20:16.013604",
+    "timeout_at": "2025-10-18T22:20:16.013604",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-17T22:20:16.013604",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251017222643346",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "REG2025062541",
+      "patient_name": "Quick Test Patient",
+      "tests": [
+        "Complete Blood Count",
+        "Comprehensive Metabolic Panel",
+        "Lipid Profile",
+        "Thyroid Stimulating Hormone",
+        "Urinalysis"
+      ],
+      "reason": "LLM recommendation based on: low risk, conditions: ",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: low risk, conditions: ",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-17T22:26:43.661372",
+    "timeout_at": "2025-10-18T22:26:43.661372",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-17T22:26:43.661372",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251017223205395",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "REG2025062541",
+      "patient_name": "Quick Test Patient",
+      "tests": [
+        "Complete Blood Count",
+        "Comprehensive Metabolic Panel",
+        "Lipid Profile",
+        "Thyroid Stimulating Hormone",
+        "HbA1c",
+        "Urinalysis",
+        "Vitamin D"
+      ],
+      "reason": "LLM recommendation based on: low risk, conditions: ",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: low risk, conditions: ",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-17T22:32:05.864274",
+    "timeout_at": "2025-10-18T22:32:05.864274",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-17T22:32:05.864274",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251019214814898",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "REG2025696153",
+      "patient_name": "Samarth Pawar",
+      "tests": [
+        "Complete Blood Count",
+        "Comprehensive Metabolic Panel",
+        "Lipid Profile",
+        "HbA1c",
+        "Thyroid Stimulating Hormone"
+      ],
+      "reason": "LLM recommendation based on: low risk, conditions: ",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: low risk, conditions: ",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-19T21:48:14.925460",
+    "timeout_at": "2025-10-20T21:48:14.925460",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-19T21:48:14.925460",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251019230002506",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "REG2025696153",
+      "patient_name": "Samarth Pawar",
+      "tests": [
+        "Complete Blood Count",
+        "Comprehensive Metabolic Panel",
+        "Lipid Profile",
+        "HbA1c",
+        "Thyroid Stimulating Hormone"
+      ],
+      "reason": "LLM recommendation based on: low risk, conditions: ",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: low risk, conditions: ",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-19T23:00:02.771796",
+    "timeout_at": "2025-10-20T23:00:02.771796",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-19T23:00:02.771796",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251020133150394",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "REG2025696153",
+      "patient_name": "Samarth Pawar",
+      "tests": [
+        "Complete Blood Count",
+        "Comprehensive Metabolic Panel",
+        "Lipid Profile",
+        "HbA1c",
+        "Thyroid Stimulating Hormone"
+      ],
+      "reason": "LLM recommendation based on: low risk, conditions: ",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: low risk, conditions: ",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-20T13:31:50.063400",
+    "timeout_at": "2025-10-21T13:31:50.063400",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-20T13:31:50.063400",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251020133239454",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "REG2025696153",
+      "patient_name": "Samarth Pawar",
+      "tests": [
+        "Complete Blood Count",
+        "Lipid Profile",
+        "HbA1c",
+        "Kidney Function Test",
+        "Liver Function Test",
+        "Thyroid Stimulating Hormone",
+        "Urinalysis"
+      ],
+      "reason": "LLM recommendation based on: low risk, conditions: ",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: low risk, conditions: ",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-20T13:32:39.673868",
+    "timeout_at": "2025-10-21T13:32:39.673868",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-20T13:32:39.674870",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251020134936106",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "REG2025696153",
+      "patient_name": "Samarth Pawar",
+      "tests": [
+        "Complete Blood Count",
+        "Lipid Profile",
+        "HbA1c",
+        "Comprehensive Metabolic Panel",
+        "Thyroid Stimulating Hormone",
+        "Urinalysis"
+      ],
+      "reason": "LLM recommendation based on: low risk, conditions: ",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: low risk, conditions: ",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-20T13:49:36.078488",
+    "timeout_at": "2025-10-21T13:49:36.078488",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-20T13:49:36.078488",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251020134936532",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "medium",
+    "requester": "AI_AGENT",
+    "details": {
+      "title": "Lab Tests Approval - Samarth Pawar",
+      "patient_id": "REG2025696153",
+      "patient_name": "Samarth Pawar",
+      "patient_age": null,
+      "chief_complaint": "Unknown",
+      "risk_assessment": "low",
+      "recommended_tests": [
+        "Complete Blood Count",
+        "Lipid Profile",
+        "HbA1c",
+        "Comprehensive Metabolic Panel",
+        "Thyroid Stimulating Hormone",
+        "Urinalysis"
+      ],
+      "test_count": 6,
+      "ai_reasoning": "Tests recommended based on medical history and symptoms"
+    },
+    "reason": "Medical evaluation recommends 6 lab tests for Samarth Pawar",
+    "estimated_cost": 3200,
+    "affected_entities": [
+      "REG2025696153"
+    ],
+    "status": "pending",
+    "requires_admin": false,
+    "created_at": "2025-10-20T13:49:36.182799",
+    "timeout_at": "2025-10-21T13:49:36.182799",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "execution_status": null,
+    "execution_result": null,
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-20T13:49:36.182799",
+        "note": "Approval request created"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251020213409774",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "normal",
+    "requester": "AI_AGENT",
+    "details": {
+      "patient_id": "REG2025696153",
+      "patient_name": "Samarth Pawar",
+      "tests": [
+        "Complete Blood Count",
+        "Comprehensive Metabolic Panel",
+        "Lipid Profile",
+        "HbA1c",
+        "Thyroid Stimulating Hormone"
+      ],
+      "reason": "LLM recommendation based on: low risk, conditions: ",
+      "ai_confidence": "high",
+      "priority": "normal"
+    },
+    "reason": "LLM recommendation based on: low risk, conditions: ",
+    "estimated_cost": null,
+    "affected_entities": [],
+    "status": "approved",
+    "requires_admin": false,
+    "created_at": "2025-10-20T21:34:09.252663",
+    "timeout_at": "2025-12-01T12:34:09.252663",
+    "approved_by": "system_auto_approver",
+    "approved_at": "2025-10-20T21:34:09.252663",
+    "rejection_reason": null,
+    "execution_status": "approved",
+    "execution_result": "Auto-approved for patient testing",
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-20T21:34:09.252663",
+        "note": "Approval request created"
+      },
+      {
+        "status": "approved",
+        "timestamp": "2025-10-20T21:34:09.252663",
+        "admin": "system_auto_approver",
+        "note": "AUTO-APPROVED: Patient workflow testing mode"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251020213409180",
+    "action_type": "order_lab_tests",
+    "tier": "tier2_request_approval",
+    "priority": "medium",
+    "requester": "AI_AGENT",
+    "details": {
+      "title": "Lab Tests Approval - Samarth Pawar",
+      "patient_id": "REG2025696153",
+      "patient_name": "Samarth Pawar",
+      "patient_age": null,
+      "chief_complaint": "Unknown",
+      "risk_assessment": "low",
+      "recommended_tests": [
+        "Complete Blood Count",
+        "Comprehensive Metabolic Panel",
+        "Lipid Profile",
+        "HbA1c",
+        "Thyroid Stimulating Hormone"
+      ],
+      "test_count": 5,
+      "ai_reasoning": "Tests recommended based on medical history and symptoms"
+    },
+    "reason": "Medical evaluation recommends 5 lab tests for Samarth Pawar",
+    "estimated_cost": 2900,
+    "affected_entities": [
+      "REG2025696153"
+    ],
+    "status": "approved",
+    "requires_admin": false,
+    "created_at": "2025-10-20T21:34:09.595431",
+    "timeout_at": "2025-12-01T12:34:09.595431",
+    "approved_by": "system_auto_approver",
+    "approved_at": "2025-10-20T21:34:09.595431",
+    "rejection_reason": null,
+    "execution_status": "approved",
+    "execution_result": "Auto-approved for patient testing",
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-10-20T21:34:09.595431",
+        "note": "Approval request created"
+      },
+      {
+        "status": "approved",
+        "timestamp": "2025-10-20T21:34:09.595431",
+        "admin": "system_auto_approver",
+        "note": "AUTO-APPROVED: Patient workflow testing mode"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251112105825949",
+    "action_type": "order_lab_test",
+    "tier": "tier2_request_approval",
+    "priority": "high",
+    "requester": "AI Agent",
+    "details": {
+      "patient_id": "REG2025001",
+      "patient_name": "Test Patient",
+      "sheet_url": "https://docs.google.com/spreadsheets/d/MOCK123ABC/edit",
+      "tests": [
+        "ECG",
+        "Troponin Test",
+        "Echocardiogram",
+        "Blood Pressure log",
+        "Lipid Profile"
+      ],
+      "doctor_specialty": "Cardiologist",
+      "shared_with": "cardio@cityhospital.com"
+    },
+    "reason": "Doctor review suggested these tests",
+    "estimated_cost": null,
+    "affected_entities": [
+      "REG2025001"
+    ],
+    "status": "approved",
+    "requires_admin": false,
+    "created_at": "2025-11-12T10:58:25.020614",
+    "timeout_at": "2025-12-24T01:58:25.020614",
+    "approved_by": "system_auto_approver",
+    "approved_at": "2025-11-12T10:58:25.020614",
+    "rejection_reason": null,
+    "execution_status": "approved",
+    "execution_result": "Auto-approved for patient testing",
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-11-12T10:58:25.020614",
+        "note": "Approval request created"
+      },
+      {
+        "status": "approved",
+        "timestamp": "2025-11-12T10:58:25.020614",
+        "admin": "system_auto_approver",
+        "note": "AUTO-APPROVED: Patient workflow testing mode"
+      }
+    ]
+  },
+  {
+    "approval_id": "APR20251112110551907",
+    "action_type": "order_lab_test",
+    "tier": "tier2_request_approval",
+    "priority": "high",
+    "requester": "AI Agent",
+    "details": {
+      "patient_id": "REG2025001",
+      "patient_name": "Test Patient",
+      "sheet_url": "https://docs.google.com/spreadsheets/d/MOCK123ABC/edit",
+      "tests": [
+        "ECG",
+        "Troponin Test",
+        "Echocardiogram",
+        "Blood Pressure log",
+        "Lipid Profile"
+      ],
+      "doctor_specialty": "Cardiologist",
+      "shared_with": "cardio@cityhospital.com"
+    },
+    "reason": "Doctor review suggested these tests",
+    "estimated_cost": null,
+    "affected_entities": [
+      "REG2025001"
+    ],
+    "status": "approved",
+    "requires_admin": false,
+    "created_at": "2025-11-12T11:05:51.504987",
+    "timeout_at": "2025-12-24T02:05:51.504987",
+    "approved_by": "system_auto_approver",
+    "approved_at": "2025-11-12T11:05:51.504987",
+    "rejection_reason": null,
+    "execution_status": "approved",
+    "execution_result": "Auto-approved for patient testing",
+    "status_history": [
+      {
+        "status": "pending",
+        "timestamp": "2025-11-12T11:05:51.504987",
+        "note": "Approval request created"
+      },
+      {
+        "status": "approved",
+        "timestamp": "2025-11-12T11:05:51.504987",
+        "admin": "system_auto_approver",
+        "note": "AUTO-APPROVED: Patient workflow testing mode"
+      }
+    ]
+  }
+]

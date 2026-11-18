@@ -1,0 +1,157 @@
+[
+  {
+    "invoice_id": "INV2025561436",
+    "patient_id": "REG2025696153",
+    "patient_name": "Unknown",
+    "invoice_date": "2025-10-19",
+    "due_date": "2025-11-18",
+    "items": [
+      {
+        "type": "Additional",
+        "description": "General Ward (3 days)",
+        "date": "2025-10-19",
+        "quantity": 1,
+        "unit_price": 4500,
+        "amount": 4500
+      },
+      {
+        "type": "Additional",
+        "description": "Lab Tests",
+        "date": "2025-10-19",
+        "quantity": 1,
+        "unit_price": 5000,
+        "amount": 5000
+      },
+      {
+        "type": "Additional",
+        "description": "Medications",
+        "date": "2025-10-19",
+        "quantity": 1,
+        "unit_price": 3000,
+        "amount": 3000
+      },
+      {
+        "type": "Additional",
+        "description": "Doctor Consultation",
+        "date": "2025-10-19",
+        "quantity": 1,
+        "unit_price": 8000,
+        "amount": 8000
+      }
+    ],
+    "subtotal": 20500.0,
+    "tax": 1640.0,
+    "total_amount": 22140.0,
+    "amount_paid": 0.0,
+    "balance_due": 22140.0,
+    "status": "Pending",
+    "notes": "Insurance Coverage: 0% (\u20b90.00), Patient Copay: \u20b920,500.00",
+    "created_at": "2025-10-19T21:48:40.921028"
+  },
+  {
+    "invoice_id": "INV2025201523",
+    "patient_id": "REG2025696153",
+    "patient_name": "Unknown",
+    "invoice_date": "2025-10-19",
+    "due_date": "2025-11-18",
+    "items": [
+      {
+        "type": "Additional",
+        "description": "Private (2 days)",
+        "date": "2025-10-19",
+        "quantity": 1,
+        "unit_price": 10000,
+        "amount": 10000
+      },
+      {
+        "type": "Additional",
+        "description": "Lab Tests",
+        "date": "2025-10-19",
+        "quantity": 1,
+        "unit_price": 5000,
+        "amount": 5000
+      },
+      {
+        "type": "Additional",
+        "description": "Medications",
+        "date": "2025-10-19",
+        "quantity": 1,
+        "unit_price": 3000,
+        "amount": 3000
+      },
+      {
+        "type": "Additional",
+        "description": "Doctor Consultation",
+        "date": "2025-10-19",
+        "quantity": 1,
+        "unit_price": 8000,
+        "amount": 8000
+      }
+    ],
+    "subtotal": 26000.0,
+    "tax": 2080.0,
+    "total_amount": 28080.0,
+    "amount_paid": 0.0,
+    "balance_due": 28080.0,
+    "status": "Pending",
+    "notes": "Insurance Coverage: 0% (\u20b90.00), Patient Copay: \u20b926,000.00",
+    "created_at": "2025-10-19T23:00:25.861758"
+  },
+  {
+    "invoice_id": "INV2025829850",
+    "patient_id": "REG2025696153",
+    "patient_name": "Unknown",
+    "invoice_date": "2025-10-19",
+    "due_date": "2025-11-18",
+    "items": [
+      {
+        "type": "Additional",
+        "description": "Private (3 days)",
+        "date": "2025-10-19",
+        "quantity": 1,
+        "unit_price": 15000,
+        "amount": 15000
+      },
+      {
+        "type": "Additional",
+        "description": "Laboratory Tests",
+        "date": "2025-10-19",
+        "quantity": 1,
+        "unit_price": 5000,
+        "amount": 5000
+      },
+      {
+        "type": "Additional",
+        "description": "Medications & Pharmacy",
+        "date": "2025-10-19",
+        "quantity": 1,
+        "unit_price": 4500,
+        "amount": 4500
+      },
+      {
+        "type": "Additional",
+        "description": "Doctor Consultation & Rounds",
+        "date": "2025-10-19",
+        "quantity": 1,
+        "unit_price": 10000,
+        "amount": 10000
+      },
+      {
+        "type": "Additional",
+        "description": "Nursing & Supplies",
+        "date": "2025-10-19",
+        "quantity": 1,
+        "unit_price": 2000,
+        "amount": 2000
+      }
+    ],
+    "subtotal": 36500.0,
+    "tax": 2920.0,
+    "total_amount": 39420.0,
+    "amount_paid": 0.0,
+    "balance_due": 39420.0,
+    "status": "Pending",
+    "notes": "Total: \u20b936,500.00 | Insurance: \u20b90.00 | Patient Copay: \u20b936,500.00",
+    "created_at": "2025-10-19T23:00:27.729090"
+  }
+]

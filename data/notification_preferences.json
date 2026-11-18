@@ -1,0 +1,30 @@
+[
+  {
+    "user_id": "REG2025610127",
+    "email_enabled": true,
+    "sms_enabled": true,
+    "in_app_enabled": true,
+    "appointment_reminders": true,
+    "billing_reminders": true,
+    "lab_results": true,
+    "prescription_refills": true,
+    "quiet_hours_start": "22:00",
+    "quiet_hours_end": "08:00",
+    "created_at": "2025-10-16T02:15:37.731492",
+    "updated_at": "2025-10-16T02:15:50.074748"
+  },
+  {
+    "user_id": "REG2025062541",
+    "email_enabled": true,
+    "sms_enabled": true,
+    "in_app_enabled": true,
+    "appointment_reminders": true,
+    "billing_reminders": true,
+    "lab_results": true,
+    "prescription_refills": true,
+    "quiet_hours_start": null,
+    "quiet_hours_end": null,
+    "created_at": "2025-10-17T22:20:39.733430",
+    "updated_at": "2025-10-17T22:32:35.544419"
+  }
+]
